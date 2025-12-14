@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SEdyXjPvRMeFHMGCNaJkrOXBdA8F9MeZPinjhEVPETx5YMPLEed/78BVXdclU84dXdw6iun4vBoBNHaWHIg37A==",
+  "success": true,
+  "projectFilePath": "/home/vev/Documents/03_school/ynov/dotnet/MiniHttpServer/MiniHttpServer.csproj",
+  "expectedPackageFiles": [
+    "/home/vev/.nuget/packages/system.io.pipelines/9.0.9/system.io.pipelines.9.0.9.nupkg.sha512",
+    "/home/vev/.nuget/packages/system.text.encodings.web/9.0.9/system.text.encodings.web.9.0.9.nupkg.sha512",
+    "/home/vev/.nuget/packages/system.text.json/9.0.9/system.text.json.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

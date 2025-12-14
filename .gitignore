@@ -1,0 +1,27 @@
+# Dépendances Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# VS Code
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
+.env.local
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# Git
+.gitconfig

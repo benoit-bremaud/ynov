@@ -1,0 +1,14 @@
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/bin/Debug/net9.0/HelloConsole
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/bin/Debug/net9.0/HelloConsole.deps.json
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/bin/Debug/net9.0/HelloConsole.runtimeconfig.json
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/bin/Debug/net9.0/HelloConsole.dll
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/bin/Debug/net9.0/HelloConsole.pdb
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.GeneratedMSBuildEditorConfig.editorconfig
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.AssemblyInfoInputs.cache
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.AssemblyInfo.cs
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.csproj.CoreCompileInputs.cache
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.dll
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/refint/HelloConsole.dll
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.pdb
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/HelloConsole.genruntimeconfig.cache
+/home/vev/Documents/03_school/dotnet/demo-csharp/HelloConsole/obj/Debug/net9.0/ref/HelloConsole.dll

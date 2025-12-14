@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "d7Ea66hrHwI=",
+  "success": true,
+  "projectFilePath": "/home/vev/Documents/03_school/ynov/M1 - Web full stack/2025-11-27 - TP ToDoList/MyTodoListAPI/MyTodoListAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/vev/.nuget/packages/microsoft.aspnetcore.openapi/9.0.10/microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "/home/vev/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

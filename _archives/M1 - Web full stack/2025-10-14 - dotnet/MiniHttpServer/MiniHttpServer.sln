@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServer", "MiniHttpServer.csproj", "{97C4C5A4-338B-088C-C766-51F6264984BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServer.Tests", "..\MiniHttpServer.Tests\MiniHttpServer.Tests.csproj", "{B63FC5BD-2F9D-4470-8584-918320DBEDF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97C4C5A4-338B-088C-C766-51F6264984BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C4C5A4-338B-088C-C766-51F6264984BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C4C5A4-338B-088C-C766-51F6264984BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C4C5A4-338B-088C-C766-51F6264984BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63FC5BD-2F9D-4470-8584-918320DBEDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63FC5BD-2F9D-4470-8584-918320DBEDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63FC5BD-2F9D-4470-8584-918320DBEDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63FC5BD-2F9D-4470-8584-918320DBEDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE55E5B3-0773-4872-AD54-5E92E242422D}
+	EndGlobalSection
+EndGlobal

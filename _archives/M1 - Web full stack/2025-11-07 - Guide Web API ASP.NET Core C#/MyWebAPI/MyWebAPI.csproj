@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- CONFIGURATION DE LA DOCUMENTATION XML                           -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    
+    <!-- LIGNE 1: Active la génération automatique de documentation XML -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    
+    <!-- LIGNE 2: Supprime les warnings pour méthodes non documentées -->
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.21" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+</Project>
