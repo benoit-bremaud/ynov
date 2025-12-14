@@ -137,54 +137,7 @@ WebSocket possible pour streaming audio temps réel.
 
 ### Diagramme Architecture Client-Serveur
 
-```mermaid
-%%{init: {'flowchart': {'subGraphTitleMargin': {'top': 6, 'bottom': 22}}}}%%
-graph TB
-    subgraph Clients["CLIENTS"]
-        WEB["Web Browser<br/>(React)"]
-        MOBILE["Mobile App<br/>(iOS / Android)"]
-    end
-    
-    subgraph Internet["INTERNET"]
-        HTTPS["HTTPS / WebSocket"]
-    end
-    
-    subgraph Server["SERVEUR"]
-        LB["Load Balancer<br/>(Nginx/HAProxy)"]
-        
-        subgraph API["Serveurs API<br/>(NestJS)"]
-            API1["API 1"]
-            API2["API 2"]
-        end
-        
-        subgraph Storage["Données"]
-            PG["PostgreSQL"]
-            REDIS["Redis"]
-            S3["Object Storage"]
-            ES["Elasticsearch"]
-        end
-        
-        CDN["CDN"]
-    end
-    
-    WEB -->|"HTTP(S)"| HTTPS
-    MOBILE -->|"HTTP(S)"| HTTPS
-    HTTPS --> LB
-    
-    LB --> API1
-    LB --> API2
-    
-    API1 --> PG
-    API1 --> REDIS
-    API1 --> S3
-    API1 --> ES
-    
-    API2 --> PG
-    API2 --> REDIS
-    
-    S3 --> CDN
-    CDN -->|Streaming rapide| HTTPS
-```
+![alt text](<Mermaid Chart - Create complex, visual diagrams with text.-2025-12-14-185327.svg>)
 
 ### Avantages pour StreamTune
 
@@ -229,60 +182,7 @@ Flux inverse :
 
 ### Diagramme Architecture en Couches
 
-```mermaid
-%%{init: {'flowchart': {'subGraphTitleMargin': {'top': 6, 'bottom': 22}}}}%%
-graph TB
-    subgraph Presentation["COUCHE 1 :<br/>PRÉSENTATION"]
-        UI["Interfaces Utilisateur<br/>(Web React, Mobile)"]
-    end
-    
-    subgraph API_Layer["COUCHE 2 :<br/>API/CONTRÔLEURS"]
-        Controllers["Controllers REST<br/>(POST, GET, PUT, DELETE)"]
-        Validation["Validation Input"]
-        Serialization["Sérialisation JSON"]
-    end
-    
-    subgraph Business_Layer["COUCHE 3 :<br/>MÉTIER"]
-        Auth["AuthService<br/>(JWT, OAuth)"]
-        PlaylistService["PlaylistService<br/>(CRUD playlists)"]
-        RecommendService["RecommendationService<br/>(Algorithmes)"]
-        SongService["SongService<br/>(Gestion chansons)"]
-    end
-    
-    subgraph Data_Layer["COUCHE 4 :<br/>PERSISTANCE"]
-        Repository["Repositories<br/>(TypeORM)"]
-        CacheService["CacheService<br/>(Redis)"]
-    end
-    
-    subgraph Database["COUCHE 5 :<br/>BASE DE DONNÉES"]
-        PG["PostgreSQL<br/>(Métadonnées)"]
-        REDIS["Redis<br/>(Cache)"]
-        S3["Object Storage<br/>(Fichiers)"]
-        ES["Elasticsearch<br/>(Search)"]
-    end
-    
-    UI --> Controllers
-    Controllers --> Validation
-    Validation --> Serialization
-    
-    Serialization --> Auth
-    Serialization --> PlaylistService
-    Serialization --> RecommendService
-    Serialization --> SongService
-    
-    Auth --> Repository
-    PlaylistService --> Repository
-    RecommendService --> Repository
-    SongService --> Repository
-    
-    Repository --> CacheService
-    
-    CacheService --> PG
-    CacheService --> REDIS
-    CacheService --> S3
-    CacheService --> ES
-
-```
+![alt text](<Mermaid Chart - Create complex, visual diagrams with text.-2025-12-14-185501.svg>)
 
 ### Avantages pour StreamTune
 
@@ -322,43 +222,7 @@ Cette séparation **horizontale + verticale** crée une architecture **modulaire
 
 ### Diagramme Cohabitation Client-Serveur + En Couches
 
-```mermaid
-%%{init: {'flowchart': {'subGraphTitleMargin': {'top': 6, 'bottom': 22}}}}%%
-graph TB
-    subgraph Client["CLIENT<br/>(Léger & Stateless)"]
-        UI["Interface Utilisateur<br/>(Web, Mobile)"]
-    end
-    
-    subgraph Communication["COMMUNICATION<br/>HTTPS / WebSocket"]
-    end
-    
-    subgraph Server["SERVEUR STRUCTURÉ EN COUCHES"]
-        subgraph Layer2["COUCHE API"]
-            API["Controllers REST"]
-        end
-        
-        subgraph Layer3["COUCHE MÉTIER"]
-            Business["Services Métier<br/>(Auth, Playlist, etc)"]
-        end
-        
-        subgraph Layer4["COUCHE PERSISTANCE"]
-            Data["Repositories<br/>(Cache, BD)"]
-        end
-        
-        subgraph Layer5["COUCHE BD"]
-            DB["PostgreSQL<br/>Redis<br/>S3<br/>Elasticsearch"]
-        end
-    end
-    
-    UI -->|"Requêtes HTTP(S)"| Communication
-    Communication -->|Réponses JSON| UI
-    
-    Communication --> API
-    API --> Business
-    Business --> Data
-    Data --> DB
-
-```
+![alt text](<Mermaid Chart - Create complex, visual diagrams with text.-2025-12-14-185542.svg>)
 
 ---
 
