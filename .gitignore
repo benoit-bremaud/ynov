@@ -28,3 +28,6 @@ build/
 
 # Documentation
 *.pdf
+
+_archives
+_archives/
